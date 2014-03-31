@@ -1,6 +1,12 @@
+
+
 var storeObject = Object();
 
 $(document).on('pagebeforeshow', '#welcome', function(){
+    $(function(){
+        $('#side-menu').slideMenu();
+    });
+    
 	$(document).on('click', '#helloButton', function(){
         // store some data
         

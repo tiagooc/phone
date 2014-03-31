@@ -5,15 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="jquery/jquery.mobile.custom.structure.min.css" />
 <link rel="stylesheet" href="jquery/jquery.mobile.custom.theme.min.css" />
+<link rel="stylesheet" href="css/jquery-mobile-slide-menu.css" type="text/css" />
 <script src="jquery/jquery-2.1.0.min.js"></script>
 <script src="jquery/jquery.mobile.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery-mobile-slide-menu.js"></script>
 <script src="scripts.js"></script>
 </head>
 
 <body>
+<div id="side-menu">
+    <ul>
+        <li><a href="/">Home</a><span class="icon"></span></li>
+        <li><a href="/page-2/">Family</a><span class="icon"></span></li>
+        <li><a href="/page-3/">Profile</a><span class="icon"></span></li>
+        <li><a href="/page-4/">Settings</a><span class="icon"></span></li>
+    </ul>
+</div>
+
 <div id="welcome" data-role="page">
-	<div data-role="header"><h1>Welcome</h1></div>
+	<div data-role="header">
+		<a href="#" class="showMenu" data-role="button" data-icon="grid" data-iconpos="notext">Menu</a>
+		<h1>Welcome</h1>
+	</div>
 	<div role="main" class="ui-content">
+
 		<h1>This is the welcome page!</h1>
 		<label for="text-basic">Please tell me your name.</label>
 		<input type="text" id="name" value="">
@@ -22,14 +37,7 @@
 	</div>
 	<div data-role="footer"><h1>Welcome Footer</h1></div>
 </div>
-<div id="hello" data-role="page">
-	<div data-role="header"><h1>Hello</h1></div>
-	<div role="main" class="ui-content">
-		Hello <span id="spanName"></span>!
-		<a href="#welcome" class="ui-btn ui-shadow ui-corner-all">Go back to the welcome page</a>
-	</div>
-	<div data-role="footer"><h1>Hello Footer</h1></div>
-</div>
+
 </body>
 
 </html>
